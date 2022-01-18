@@ -1,0 +1,19 @@
+﻿@page "/databinding"
+<h1>@Mensagem</h1>
+<h2>@Ragards()</h2>
+
+<input @bind="@Mensagem"/>
+<button @onclick="UpdateMessage">Updade Message</button>
+@code{
+    private string Mensagem { get; set; } = "Hi, Data Binding";
+
+    private string Ragards()
+    {
+        return "Welcome!";
+    }
+
+    private void UpdateMessage()
+    {
+        Mensagem = "You pressed the button!";
+    }
+}

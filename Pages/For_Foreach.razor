@@ -1,0 +1,46 @@
+﻿@page "/forforeach"
+<h1></h1>
+<h2>foreach:</h2>
+@foreach (var payments in GetProducts())
+{
+<ol>
+        <li>
+            <h2>Payment : @payments.Name</h2>
+            <h2>Payment Date : @payments.RegDate</h2>
+        </li>
+</ol>
+}
+<h2>for:</h2>
+@for (var i=0; i < payments.Count; i++){
+<ul>
+        <li>
+            <h2>@(i) - Payment : @payments[i].Name</h2>
+            <h2>Payment Date : @payments[i].RegDate</h2>
+        </li>
+</ul>
+}
+@code {
+    //public Product Payment {get { return GetProduct(); }}
+    public List<Product> payments { get { return GetProducts(); }}
+    private List<Product> GetProducts()
+    {
+        return new List<Product>()
+        {
+            new Product()
+            {
+              Name = "Payment 1",
+              RegDate = DateTime.Today
+            },
+            new Product()
+            {
+              Name = "Payment 2",
+              RegDate = DateTime.Today
+            },
+            new Product()
+            {
+              Name = "Payment 3",
+              RegDate = DateTime.Today
+            }
+        };
+    }
+}

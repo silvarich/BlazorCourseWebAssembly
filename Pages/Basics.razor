@@ -1,0 +1,36 @@
+﻿@page "/basics"
+<h3>Basics</h3>
+
+<h1>@date</h1>
+<h1>@Saudacao(nome)</h1>
+Welcome to your new app.
+<button @onclick="@OnClickButton">Click here</button>
+<SurveyPrompt Title="How is Blazor working for you?" />
+<h3>Pizza : @Pizza.Name</h3>
+<h3>Pizza : @Pizza.RegDate.ToShortDateString()</h3>
+@code{
+    // Basics for razor components
+    string nome = "Rixote";
+    private string date = DateTime.Now.DayOfWeek.ToString();
+
+    private string Saudacao(string nome)
+    {
+        var message = "Welcome " + nome.ToUpper();
+        return message;
+    }
+    private void OnClickButton()
+    {
+        Console.WriteLine("I've been clicked!'");
+    }
+    //basics for class. Remeber to put the namespace under _Imports.razor
+    public Product Pizza { get { return GetProduct(); } }
+    private Product GetProduct()
+    {
+        return new Product()
+            {
+                Name = "Pizza",
+                RegDate = new DateTime(2021, 1, 9)
+            };
+    }
+
+}

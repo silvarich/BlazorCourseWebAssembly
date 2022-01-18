@@ -1,0 +1,19 @@
+﻿@page "/databinding2"
+<button @onclick="@ChangeBool">Change Boolean Value</button>
+
+Input Disabled : <input disabled="@State" />
+
+Input readonly : <input readonly="@State" />
+
+CheckBox checked : <input type="checkbox" checked="@State" />
+
+
+
+
+@code {
+    public bool State { get; set; }
+    private void ChangeBool()
+    {
+        State = !State;
+    }
+}

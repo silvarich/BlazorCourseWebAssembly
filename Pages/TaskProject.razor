@@ -1,0 +1,16 @@
+﻿@page "/taskproject"
+<h3>Task</h3>
+
+@code {
+    public class Task
+    {
+        public Guid ID { get; set; }
+        public string Description { get; set; }
+        public bool Done { get; set; }
+        public DateTime CreationDate { get; set; }
+
+    }
+    private string newTask { get; set; }
+
+    private List<Task> tasks = new List<Task>();
+}
