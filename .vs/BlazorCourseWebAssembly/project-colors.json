@@ -10,7 +10,12 @@
       "ProjectGuid": "69bd273b-ef11-4492-b148-16c10874a655",
       "DisplayName": "BlazorCourseWebAssembly",
       "ColorIndex": 1
+    },
+    "fc6b5f12-1060-4231-b34f-828d5e09f5da": {
+      "ProjectGuid": "fc6b5f12-1060-4231-b34f-828d5e09f5da",
+      "DisplayName": "BlazorCourseWebAssembly",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }
