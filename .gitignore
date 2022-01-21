@@ -1,0 +1,8 @@
+
+obj/project.nuget.cache
+obj/project.assets.json
+obj/Debug/net6.0/BlazorCourseWebAssembly.GeneratedMSBuildEditorConfig.editorconfig
+obj/Debug/net6.0/BlazorCourseWebAssembly.csproj.AssemblyReference.cache
+obj/Debug/net6.0/BlazorCourseWebAssembly.assets.cache
+obj/BlazorCourseWebAssembly.csproj.nuget.g.props
+obj/BlazorCourseWebAssembly.csproj.nuget.dgspec.json

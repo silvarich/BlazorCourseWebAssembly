@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rixote\\Documents\\GitHub\\repos\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj": {}
+    "C:\\Users\\w504528\\Documents\\GitHub\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rixote\\Documents\\GitHub\\repos\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj": {
+    "C:\\Users\\w504528\\Documents\\GitHub\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rixote\\Documents\\GitHub\\repos\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj",
+        "projectUniqueName": "C:\\Users\\w504528\\Documents\\GitHub\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj",
         "projectName": "BlazorCourseWebAssembly",
-        "projectPath": "C:\\Users\\Rixote\\Documents\\GitHub\\repos\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj",
-        "packagesPath": "C:\\Users\\Rixote\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rixote\\Documents\\GitHub\\repos\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly\\obj\\",
+        "projectPath": "C:\\Users\\w504528\\Documents\\GitHub\\BlazorCourseWebAssembly\\BlazorCourseWebAssembly.csproj",
+        "packagesPath": "C:\\Users\\w504528\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\w504528\\Documents\\GitHub\\BlazorCourseWebAssembly\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Rixote\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\w504528\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

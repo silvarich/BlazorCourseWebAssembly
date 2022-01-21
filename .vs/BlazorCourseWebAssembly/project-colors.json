@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9a1e0eee-267a-4d10-a38f-9e4e1cf21b0c": {
+      "ProjectGuid": "9a1e0eee-267a-4d10-a38f-9e4e1cf21b0c",
+      "DisplayName": "BlazorCourseWebAssembly",
+      "ColorIndex": 0
+    },
+    "69bd273b-ef11-4492-b148-16c10874a655": {
+      "ProjectGuid": "69bd273b-ef11-4492-b148-16c10874a655",
+      "DisplayName": "BlazorCourseWebAssembly",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}
