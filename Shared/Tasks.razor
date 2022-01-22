@@ -1,0 +1,68 @@
+﻿<h3>Tasks</h3>
+<h1>@Title</h1>
+@if(tasks == null)
+{   <Alert Message="Loading..."></Alert>
+    @*<p>Loading...</p>*@
+}
+else if(!tasks.Any())
+{
+    <Alert Message="Loading..."></Alert>
+    @*<p>Still waiting</p>*@
+}
+else
+{
+    <table class ="table">
+        <thread>
+            <tr>
+                <th>Date</th>
+                <th>Description</th>
+                <th>Done</th>
+            </tr>
+        </thread>
+        <tbody>
+            @foreach (var item in tasks)
+            {
+            <tr>
+                <td><button @onclick="@(() => RemoveTask(item.ID))"><i class ="oi oi-trash>"></i></button></td>
+                <td>@item.CreationDate</td>
+                <td>@item.Description</td>
+                <td><input type="checkbox"@bind="item.Done"/>@item.Done</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+<div class="form-group">
+    <label>Task</label>
+    <input type="Text" placeholder="What task?" @bind="newTask"/>
+    <button class="btn btn-primary" @onclick="AddNewTask">Register Task</button>
+</div>
+
+@code {
+
+    [Parameter] public List<BlazorCourseWebAssembly.Entities.Task> tasks { get; set; } 
+    [Parameter] public string Title { get; set; }
+
+    private string newTask = "";
+
+    void AddNewTask()
+    {
+        if (!string.IsNullOrWhiteSpace(newTask))
+        {
+            tasks.Add(new BlazorCourseWebAssembly.Entities.Task
+                {
+                    CreationDate = DateTime.Now,
+                    Description = newTask,
+                    ID = Guid.NewGuid()
+
+                });
+            newTask = "";
+        }
+    }
+    void RemoveTask(Guid id)
+    {
+        tasks.Remove(tasks.First(x => x.ID == id));
+    }
+}
+
+
